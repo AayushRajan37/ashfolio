@@ -1,0 +1,71 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-family: "Source Sans 3", sans-serif;
+}
+
+.resume {
+  padding: 2rem 0 3rem 0;
+}
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  /* margin-left: 35%; */
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: #6222cc;
+  border: #6222cc;
+  color: white;
+  border-radius: 5px;
+  width: 3000px;
+  padding: 10px;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: transparent;
+  border: solid 2px #6222cc;
+  color: #6222cc;
+  font-weight: 500;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: transparent;
+  border: solid 2px #6222cc;
+  color: #6222cc;
+  border-radius: 5px;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 20px 30px 30px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+.card-header {
+  font-size: 20px;
+  font-weight: 700;
+}
+.fa-book:before {
+  content: "\f02d";
+  background: #6100ff;
+  color: white;
+  padding: 12px;
+  border-radius: 22px;
+}
+.fa-briefcase:before {
+  content: "\f02d";
+  background: #6100ff;
+  color: white;
+  padding: 12px;
+  border-radius: 22px;
+}
