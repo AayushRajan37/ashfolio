@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link href="normalize.css" rel="stylesheet" />
+  
+    <title>Aayush's Portfolio Site</title>
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+    <link rel="stylesheet" type="text/css" href="portfolio.css" />
+  </head>
+
+  <body>
+    <!-- navbar -->
+    <nav class="shadow-lg  bg-white rounded">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#aboutme">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="" class="button">Download Resume</a></li>
+      </ul>
+      
+      
+    </nav>
+    <!-- hero sevtion or pic section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero_cont">
+        <h1 class="hero-title">
+         <span> Hi! I'm Aayush Rajan</span> 
+        </h1>
+          <span class="hero-info">Designing your digital dreams into reality with a creative touch. Web Design, UX/UI Design & Graphic Design </span>
+       
+        <!-- <img src="images/ash.jpg" /> -->
+        <a href="#projects" class="hero_btn">PROJECTS</a>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- about me section -->
+    <section id="aboutme" class="aboutme">
+      <h1>About me</h1>
+      <div class="aboutme-section">
+        <div class="img">
+          <div class="aboutme-image"></div>
+        </div>
+        <div class="aboutme-text">
+          <p>
+            I'm a <strong>Frontend Web Developer</strong> building the Front-end of Websites and Web 
+            Applications that leads to the success of the overall product. Check out some of my work in the
+            <strong>Projects</strong> section.</p>
+
+          <p>I'm also proficient in <strong>UX/UI Design</strong> & <strong>Graphic Design</strong>
+           , that helps me to create stunning designes. Feel free to Connect or Follow me on my 
+           <a href="">Linkedin</a> to get more updates.
+          </p>
+
+          <p>
+            I'm open to <strong>Job</strong>  opportunities where I can contribute, learn and grow. If you have a good
+             opportunity that matches my skills and experience then don't hesitate to contact me.
+          </p>
+          </p>
+          <br>
+
+        
+        </div>
+      </div>
+    </section>
+    <br><br><br>
+
+    <!-- education & experience -->
+<section class="resume">
+  <div class="container">
+    <div class="tab">
+      <button
+        class="tablinks"
+        onclick="opentab(event, 'London')"
+        id="defaultOpen"
+      >
+        Education
+      </button>
+      <button class="tablinks" onclick="opentab(event, 'Paris')">
+        Experience
+      </button>
+    </div>
+
+    <div id="London" class="tabcontent">
+      <h2><i class="fa fa-book" aria-hidden="true"></i> EDUCATION</h2>
+      <div class="card">
+        <h3 class="card-header">- Bachelor of Science in Computer Science</h3>
+        <div class="card-body">
+          <h4 class="card-title">D.A.V University, Jalandhar</h4>
+          <p class="card-text">From - 2020 - 2024 | CGPA: 7.2/10.00</p>
+        </div>
+      </div>
+      <hr />
+      <div class="card">
+        <h3 class="card-header">- Senior Secondary Education</h3>
+        <div class="card-body">
+          <h4 class="card-title">St. Dr. Public Sr. sec. School, Gagret</h4>
+          <p class="card-text">From - 2018 - 2020 | Percentage: 76.4%</p>
+        </div>
+      </div>
+      <hr />
+      <div class="card">
+        <h3 class="card-header">- High School Secondary Education</h3>
+        <div class="card-body">
+          <h4 class="card-title">Modern Sr. sec. School of Sciences, Amb</h4>
+          <p class="card-text">From - 2018 - 2020 | Percentage: 78%</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="Paris" class="tabcontent">
+      <h2><i class="fa fa-briefcase" aria-hidden="true"></i> EXPERIENCE</h2>
+      <div class="card">
+        <h3 class="card-header">- Graphic Design Intern</h3>
+        <div class="card-body">
+          <h4 class="card-title">Weheal, Rajesthan</h4>
+          <p class="card-text">
+            From - Aug 2023 - Oct 2023 | Skills - Graphic Designing
+          </p>
+        </div>
+      </div>
+      <hr />
+      <div class="card">
+        <h3 class="card-header">- Web Designing Trainee</h3>
+        <div class="card-body">
+          <h4 class="card-title">ThinkNEXT Technologies Pvt. Ltd., Mohali</h4>
+          <p class="card-text">
+            From - June 2022 - July 2022 | Skills - HTML5, CSS3, JavaScript &
+            Bootstrap
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function opentab(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+    </script>
+    </div>
+  </section>
+
+
+<!-- skills wala section -->
+<section class="skills">
+  <div class="container">
+    <div class="skills_row">
+      <h2 class="kills-header">My Skills</h2>
+      <div class="skills-content">
+        <div class="skill-name">HTML5</div>
+        <div class="skill-name">CSS3</div>
+        <div class="skill-name">JavaScript</div>
+        <div class="skill-name">jQuery</div>
+        <div class="skill-name">Bootstrap</div>
+        <div class="skill-name">MySql</div>
+        <div class="skill-name">SEO</div>
+        <div class="skill-name">Prototyping</div>
+        <div class="skill-name">Canva</div>
+        <div class="skill-name">Wireframing</div>
+        <div class="skill-name">Github</div>
+        <div class="skill-name">UX/UI Design</div>
+        <div class="skill-name">Figma</div>
+        <div class="skill-name">PHP Basics</div>
+        <div class="skill-name">Python Basics</div>
+        <div class="skill-name">JAVA Basics</div>
+        <div class="skill-name">Photoshop Basics</div>
+      </div>
+  
+    </div>
+    
+
+  </div>
+
+</section>
+    <!--  project section -->
+    <section class="projects" id="projects">
+      <div class="container">
+          <h1 class=" project-head">Projects</h1>
+          <span class="header_text"> Here you will find some of the personal projects that I created in my Collage time with their own case study</span>
+<div class="project_content">
+  <div class=" project_row">
+    <div class="project_row_cont">
+      <img src="images/adventure.com.png" alt="" class="project_row_img ">
+    </div>
+    <div class="project_row_content">
+    <h3 class="project-title"><strong> ADVENTURE.com</strong></h3>
+    <p class="projects__row-dsc">ADVENTURE.com is a successful Open-Source project that I created which have been 
+      featured on some of the biggest tech sites like CSS-Tricks, Hostinger, etc & used by thousands of developers
+       globally</p>
+       <a href="https://aayushrajan37.github.io/Adventure.com/" class="btn btn-md project-btn">VIEW</a>
+    
+  </div>
+
+  </div>
+</div>
+
+<div class="project_content">
+  <div class=" project_row">
+    <div class="project_row_cont">
+      <img src="images/FindJob.png" alt="" class="project_row_img ">
+    </div>
+    <div class="project_row_content">
+    <h3 class="project-title"><strong> FindJob</strong></h3>
+    <p class="projects__row-dsc">FindJob is a successful Open-Source project that I created which have been 
+      featured on some of the biggest tech sites like CSS-Tricks, Hostinger, etc & used by thousands of developers
+       globally</p>
+       <a href="https://aayushrajan37.github.io/FindJob/" class="btn btn-md project-btn">VIEW</a>
+    
+  </div>
+
+  </div>
+</div>
+<div class="project_content">
+  <div class=" project_row">
+    <div class="project_row_cont">
+      <img src="images/portfolio.png" alt="" class="project_row_img ">
+    </div>
+    <div class="project_row_content">
+    <h3 class="project-title"><strong> Portfolio</strong></h3>
+    <p class="projects__row-dsc">Portfolio is a successful Open-Source project that I created which have been 
+      featured on some of the biggest tech sites like CSS-Tricks, Hostinger, etc & used by thousands of developers
+       globally</p>
+       <a href="" class="btn btn-md project-btn">VIEW</a>
+    
+  </div>
+
+  </div>
+</div>
+      </div>
+  </section>
+
+  <!-- contaxt section -->
+  <section class="contact" id="contact">
+    <div class="main-container">
+      <h1 class="contact_head">Contact</h1>
+      <span class="header_text">
+        Feel free to Contact me by submitting the form below and I will get
+        back to you as soon as possible</span
+      >
+
+      <div class="contact-form_container">
+        <form action="#" method="post" class="contact_form">
+          <div class="contact-form_field">
+            <label for="name" class="contact-form_lable">Name</label>
+            <input
+              type="text"
+              class="contact-form_input"
+              id="name"
+              name="name"
+              placeholder="Enter Your Name"
+              required
+            />
+          </div>
+
+          <div class="contact-form_field">
+            <label for="email" class="contact-form_lable">Email</label>
+            <input
+              type="text"
+              class="contact-form_input"
+              id="email"
+              name="email"
+              placeholder="Enter Your Email"
+              required
+            />
+          </div>
+
+            <div class="contact-form_field">
+              <label for="message" class="contact-form_lable">Message</label>
+              <textarea
+                required
+                cols="30"
+                rows="10"
+                class="contact-form_input"
+                placeholder="Enter Your Message"
+                name="message"
+                id="message"
+              ></textarea>
+            </div>
+            <button type="submit" class="contact-button"> Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <!-- footer section.. -->
+  <footer style="background-color: black;">
+    <div class="container">
+      <div class="footer-upper">
+        <div class="footer-contant">
+           <h2 class="footer-header">AAYUSH RAJAN</h2>
+           <p class="footer-desc">A Frontend focused Web Developer building the Frontend of Websites and Web Applications
+             that leads to the success of the overall product</p>
+        </div>
+        <div class="social-media">
+          <h2 class="footer-header">Social Media</h2>
+            <a href="https://www.facebook.com/rpcodestars"><i class="fa fa-facebook-official"></i></a>
+            <a href="https://twitter.com/techedrob"><i class="fa fa-twitter-square"></i></a>
+            <a href="https://twitter.com/techedrob"><i class="fa fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/aayush-rajan/"><i class="fa fa-linkedin-square"></i></a>
+            <a href="https://github.com/AayushRajan37"><i class="fa fa-github-square"></i></a>
+        </div>
+      </div>
+      <div class="footer-lower">
+
+          <p>&copy;Copyright 2023. Made By Aayush Rajan</p>
+    
+      </div>
+
+    </div>
+
+</footer>
+
+  </body>
+</html>
