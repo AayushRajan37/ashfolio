@@ -285,9 +285,10 @@ nav ul li a:hover {
   border: #6222cc;
   color: white;
   border-radius: 5px;
-  padding: 10px 50px;
+  padding: 10px 30px;
   font-weight: 700;
   letter-spacing: 1px;
+  font-size: 1.1rem;
 }
 
 .project-btn:hover {
