@@ -115,6 +115,7 @@ nav ul li a:hover {
   font-weight: 700;
   font-size: 1.4rem;
   margin: 18rem;
+   border: #6222cc solid 2px;
 }
 
 .hero_btn:hover {
@@ -381,7 +382,7 @@ nav ul li a:hover {
 
 .contact-button {
   background-color: #6222cc;
-  border: #6222cc;
+   border: #6222cc solid 2px;
   color: white;
   border-radius: 5px;
   padding: 1.2rem 4rem;
