@@ -491,6 +491,8 @@ footer .container {
 .social-media a i {
   color: white;
   transition: 0.2s;
+  margin: 0 4px;
+  font-size: 32px;
 }
 
 .social-media a i:hover {
@@ -506,7 +508,6 @@ footer .container {
   text-align: left;
   text-align: center;
 }
-
 
 .graphics {
   padding: 2rem 0;
@@ -540,4 +541,3 @@ footer .container {
   width: 350px;
   height: 175px;
 }
-
