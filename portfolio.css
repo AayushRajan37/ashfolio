@@ -506,3 +506,38 @@ footer .container {
   text-align: left;
   text-align: center;
 }
+
+
+.graphics {
+  padding: 2rem 0;
+}
+.graphic-head {
+  letter-spacing: 1px;
+  color: black;
+  font-size: 40px;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+.graphic-row-1 {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr;
+  grid-gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.square_graphics {
+  width: 250px;
+  height: 250px;
+}
+.graphic-row-2 {
+  display: grid;
+  grid-template-columns: 0.5fr 0.5fr 0.5fr;
+  grid-gap: 1rem;
+  margin-bottom: 2rem;
+}
+.rectangle_graphics {
+  width: 350px;
+  height: 175px;
+}
+
